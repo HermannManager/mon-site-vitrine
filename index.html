@@ -1,12 +1,255 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Vitrine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Église de la Grâce</title>
+  <!-- Lien vers Font Awesome pour les icônes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHqT6F0F0f6j4U8O7n8X4N1Q8zp1Zv5l6QcH8OZz4tU7OJj5Thm4W+YbSX6y0/6V5AbC5wZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Style général */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      padding: 0 20px;
+    }
+    /* Header */
+    header {
+      background: url('header-bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      padding: 20px 0;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(44, 62, 80, 0.7);
+      z-index: 1;
+    }
+    header .header-content {
+      position: relative;
+      z-index: 2;
+    }
+    .logo {
+      float: left;
+    }
+    .logo img {
+      width: 120px;
+    }
+    nav {
+      float: right;
+      margin-top: 30px;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Bannière */
+    .banner {
+      text-align: center;
+      padding: 150px 20px;
+      background: url('banner.jpg') no-repeat center center/cover;
+      color: #fff;
+      position: relative;
+    }
+    .banner h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    /* Sections */
+    section {
+      padding: 60px 0;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #2c3e50;
+    }
+    /* Qui sommes-nous */
+    #who-we-are .sub-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    #who-we-are .sub-section > div {
+      flex: 0 0 48%;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    #who-we-are .sub-section h3 {
+      color: #e67e22;
+    }
+    #who-we-are .sub-section img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    /* Bouton de dons */
+    .btn-donate {
+      display: inline-block;
+      background: #e67e22;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn-donate:hover {
+      background: #d35400;
+    }
+    /* Social Icons dans le footer */
+    .social-icons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    /* Section contact et Google map */
+    #contact iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+    }
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    /* Responsive */
+    @media(max-width:768px) {
+      nav ul li { display: block; margin: 10px 0; text-align: center; }
+      #who-we-are .sub-section { flex-direction: column; }
+      #who-we-are .sub-section > div { flex: 0 0 100%; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site vitrine</h1>
-    <p>Ce site est en construction...</p>
-</body>
-</html>
+  <!-- Header -->
+  <header>
+    <div class="container clearfix header-content">
+      <div class="logo">
+        <img src="logo.png" alt="Logo de l'Église">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#who-we-are">Qui sommes-nous</a></li>
+          <li><a href="#events">Événements</a></li>
+          <li><a href="#media">Médias</a></li>
+          <li><a href="#donate">Faire un Don</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Bannière -->
+  <section class="banner">
+    <div class="container">
+      <h1>Église de la Grâce</h1>
+    </div>
+  </section>
+  
+  <!-- Qui sommes-nous -->
+  <section id="who-we-are">
+    <div class="container">
+      <h2>Qui sommes-nous</h2>
+      <div class="sub-section">
+        <div id="church">
+          <h3>Notre Église</h3>
+          <p>Découvrez l'histoire, la mission et les valeurs de notre église, un lieu de vie spirituelle et d'accueil pour tous.</p>
+        </div>
+        <div id="pastor">
+          <h3>Notre Pasteur</h3>
+          <img src="pastor.jpg" alt="Photo du Pasteur">
+          <p>Notre pasteur, un guide spirituel engagé, partage sa vision et son dévouement pour accompagner chacun dans sa foi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Événements -->
+  <section id="events" style="background: #fff;">
+    <div class="container">
+      <h2>Événements à venir</h2>
+      <p style="text-align: center;">Participez à nos prochaines activités et rencontres spirituelles.</p>
+      <!-- Vous pouvez intégrer un calendrier ou une liste d'événements ici -->
+    </div>
+  </section>
+  
+  <!-- Médias -->
+  <section id="media">
+    <div class="container">
+      <h2>Nos Médias</h2>
+      <div class="sub-section">
+        <div>
+          <h3>Vidéos YouTube</h3>
+          <!-- Exemple d'intégration d'une vidéo YouTube -->  
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_VIDEO" title="Vidéo YouTube" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+          <h3>Actualités Facebook</h3>
+          <!-- Exemple d'intégration d'un post Facebook -->  
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fegliseparoledusalut.valdoise%2Fposts/1234567890&width=500" width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Faire un Don -->
+  <section id="donate" style="background: #fff;">
+    <div class="container">
+      <h2>Faire un Don</h2>
+      <p style="text-align: center;">Supportez notre mission en contribuant. Cliquez ci-dessous pour accéder à notre plateforme de dons sécurisée.</p>
+      <div style="text-align: center;">
+        <a href="https://votrepageexterne.com" target="_blank" class="btn-donate">Faire un Don</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Adresse : 123 Rue Exemple, 75000 Paris, France</p>
+      <!-- Carte Google Map intégrée (exemple) -->  
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99999999999!2d2.3522215!3d48.856614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877b8c3c5%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1610000000000\" allowfullscreen loading=\"lazy\"></iframe>\n    </div>\n  </section>\n  \n  <!-- Footer -->\n  <footer>\n    <div class=\"container\">\n      <div class=\"social-icons\">\n        <a href=\"https://www.facebook.com/egliseparoledusalut.valdoise/?locale=fr_FR\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a>\n        <a href=\"https://www.instagram.com/eeps.valdoise/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>\n        <a href=\"https://www.youtube.com/@eepsvaldoisetv\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>\n      </div>\n      <p>&copy; 2024 Église de la Grâce - Tous droits réservés.</p>\n    </div>\n  </footer>\n</body>\n</html>\n"} 
