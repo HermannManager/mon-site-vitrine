@@ -6,8 +6,8 @@
   <title>Église de la Grâce</title>
   <!-- Lien vers Font Awesome pour les icônes sociales -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHqT6F0F0f6j4U8O7n8X4N1Q8zp1Zv5l6QcH8OZz4tU7OJj5Thm4W+YbSX6y0/6V5AbC5wZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-   
+  <!-- Lien vers le fichier CSS externe -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header -->
@@ -18,18 +18,18 @@
       </div>
       <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Accueil</a></li>
           <li class="dropdown">
-          <a href="#">Qui sommes-nous ▼</a>
-          <ul class="dropdown-menu">
-            <li><a href="eglise.html">Notre Église</a></li>
-            <li><a href="pasteur.html">Notre Pasteur</a></li>
-          </ul>
-        </li>
-        <li><a href="evenements.html">Événements</a></li>
+            <a href="#">Qui sommes-nous ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="eglise.html">Notre Église</a></li>
+              <li><a href="pasteur.html">Notre Pasteur</a></li>
+            </ul>
+          </li>
+          <li><a href="evenements.html">Événements</a></li>
           <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
+        </ul>
+      </nav>
     </div>
   </header>
   
@@ -61,11 +61,10 @@
   </section>
   
   <!-- Événements -->
-  <section id="events" style="background: #fff;">
+  <section id="events">
     <div class="container">
       <h2>Événements à venir</h2>
-      <p style="text-align: center;">Participez à nos prochaines activités et rencontres spirituelles.</p>
-      <!-- Vous pouvez intégrer un calendrier ou une liste d'événements ici -->
+      <p>Participez à nos prochaines activités et rencontres spirituelles.</p>
     </div>
   </section>
   
@@ -76,24 +75,22 @@
       <div class="sub-section">
         <div>
           <h3>Vidéos YouTube</h3>
-          <!-- Exemple d'intégration d'une vidéo YouTube -->  
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_VIDEO" title="Vidéo YouTube" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_VIDEO" frameborder="0" allowfullscreen></iframe>
         </div>
         <div>
           <h3>Actualités Facebook</h3>
-          <!-- Exemple d'intégration d'un post Facebook -->  
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fegliseparoledusalut.valdoise%2Fposts/1234567890&width=500" width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fegliseparoledusalut.valdoise%2Fposts/1234567890&width=500" width="100%" height="600" style="border:none;overflow:hidden" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
   
   <!-- Faire un Don -->
-  <section id="donate" style="background: #fff;">
+  <section id="donate">
     <div class="container">
       <h2>Faire un Don</h2>
-      <p style="text-align: center;">Supportez notre mission en contribuant. Cliquez ci-dessous pour accéder à notre plateforme de dons sécurisée.</p>
-      <div style="text-align: center;">
+      <p>Supportez notre mission en contribuant.</p>
+      <div>
         <a href="https://votrepageexterne.com" target="_blank" class="btn-donate">Faire un Don</a>
       </div>
     </div>
@@ -104,5 +101,20 @@
     <div class="container">
       <h2>Contact</h2>
       <p>Adresse : 123 Rue Exemple, 75000 Paris, France</p>
-      <!-- Carte Google Map intégrée (exemple) -->  
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99999999999!2d2.3522215!3d48.856614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877b8c3c5%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1610000000000\" allowfullscreen loading=\"lazy\"></iframe>\n    </div>\n  </section>\n  \n  <!-- Footer -->\n  <footer>\n    <div class=\"container\">\n      <div class=\"social-icons\">\n        <a href=\"https://www.facebook.com/egliseparoledusalut.valdoise/?locale=fr_FR\" target=\"_blank\"><i class=\"fab fa-facebook-f\"></i></a>\n        <a href=\"https://www.instagram.com/eeps.valdoise/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>\n        <a href=\"https://www.youtube.com/@eepsvaldoisetv\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>\n      </div>\n      <p>&copy; 2024 Église de la Grâce - Tous droits réservés.</p>\n    </div>\n  </footer>\n</body>\n</html>\n"} 
+      <iframe src="https://www.google.com/maps/embed?..." allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/egliseparoledusalut.valdoise/?locale=fr_FR" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/eeps.valdoise/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@eepsvaldoisetv" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2024 Église de la Grâce - Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
